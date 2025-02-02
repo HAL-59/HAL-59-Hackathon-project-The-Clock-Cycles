@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: sans-serif;
+    background-color: #111; /* Dark background */
+    color: #eee; /* Light text */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #7DF9FF; /* Electric blue */
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1; /* Allow main content to expand */
+}
+
+#building-select {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #39FF14; /* Neon green */
+}
+
+#building-dropdown {
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #555;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#plan-container {
+    /* Styles for the seating plan area */
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 400px; /* Set a minimum height */
+    position: relative; /* For absolute positioning of seats */
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #39FF14; /* Neon green seats */
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute; /* Position seats within the container */
+}
+
+.seat.occupied {
+    background-color: #FF69B4; /* Hot pink for occupied seats */
+}
+
+footer {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Example grid layout for seats (customize as needed) */
+.seat-row {
+    display: flex;
+}

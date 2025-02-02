@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFICE SEAT PLANNER</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ... (styles from previous examples) ... */
+
+        /* Punk/Sketchy Styling */
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #111;
+            color: #eee;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0 #000, -2px -2px 0 #000; /* Add a "shadow" effect */
+        }
+
+        .service-grid div {
+            border: 2px dashed #39FF14;
+            background-color: #222; /* Slightly darker background for services */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition */
+        }
+
+        .service-grid div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #39FF14; /* Glow on hover */
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax for image size */
+            gap: 20px;
+        }
+
+        .image-grid img {
+            border: 2px solid #7DF9FF;
+            box-shadow: 0 0 10px #7DF9FF;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #7DF9FF;
+        }
+
+        .client-logos img {
+            transition: transform 0.2s ease;
+        }
+
+        .client-logos img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>OFFICE SEAT PLANNER</h1>
+        <p>Managing Office Space</p>
+        <div class="auth-buttons">
+            <button id="signInButton"> <a href="signup.html"> Sign Up</a></button>
+            <button id="loginButton"><a href="login.html">Login</a></button>
+        </div>
+    </header>
+
+
+    <section id="productivity">
+        <h2>Amplify your productivity at work.</h2>
+        <p>We help you optimize your office space to boost employee productivity and collaboration.</p>
+        <p>Our seat planning solutions consider factors like team dynamics, department adjacencies, and individual preferences to create an efficient and comfortable work environment.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery.</h2>
+        <div class="image-grid">
+            <img src="images/office1.jpg" alt="HR DPT">
+            <img src="images/office2.jpg" alt="DEVELOPERS">
+            <img src="images/office3.jpg" alt="TECHNICAL">
+            <img src="images/office4.jpg" alt="RESEARCH">
+            <img src="images/office5.jpg" alt="DATA MGT & GUEST">
+            
+        </div>
+        
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2025 Office Seat Planner</p>
+    </footer>
+    <script src="script.js"></script>
+    </script>
+</body>
+
+</html>

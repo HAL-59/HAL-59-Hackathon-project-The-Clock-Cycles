@@ -1,0 +1,86 @@
+/* styles.css (or you can include it in the <style> tag of login.html) */
+
+body {
+    font-family: sans-serif;
+    background-color: #111;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container { /* Note the different class name */
+    background-color: #222;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+h2 {
+    color: #7DF9FF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #39FF14;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 16px);
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #eee;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #39FF14;
+    color: #111;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #7DF9FF;
+    color: #111;
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #7DF9FF;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
